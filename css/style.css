@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: hsl(185, 75%, 39%);
+}
+
+#bg-top {
+    position: absolute;
+    right: 220px;
+    bottom: 250px;
+    z-index: -1;
+}
+
+#bg-bot {
+    position: absolute;
+    top: 280px;
+    left: 180px;
+    z-index: -1;
+}
+.main {
+    min-height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.container {
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin: auto;
+    margin-top: 120px;
+}
+
+.head {
+    width: 350px;
+    height: 150px;
+    background: url('../images/bg-pattern-card.svg');
+    border-radius: 14px 14px 0px 0px;
+    overflow: hidden;
+}
+
+.card-body {
+    margin: 70px 0px 20px 0px; 
+    text-align: center;
+}
+
+#personal-photo {
+    border-radius: 100%;
+    position: absolute;
+    top: 210px;
+    border: 5px solid #FFF;
+    overflow: hidden;
+    
+}
+
+.infos {
+    color: hsl(0, 0%, 59%) ;
+    font-weight: 400;
+}
+
+.country {
+    font-size: 14px;
+}
+
+.heading {
+    color :hsl(229, 23%, 23%) ;
+    font-weight: 700;
+}
+
+.description {
+    background: #FFF;
+    width: 100%;
+    font-size: 18px;
+    font-family: 'Kumbh Sans', sans-serif;
+    line-height: 26px;
+    border-radius:0px 0px 14px 14px;
+    
+}
+
+.desc {
+    color: hsl(227, 10%, 46%);
+    font-size: 12px;
+}
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 25px 0px;
+}
+
+.stat  {
+    text-align: center;
+}
+
+hr {
+    height: 1px;
+    background-color:rgb(218, 218, 218);
+    border: none;
+}
+
+#personal-id {
+    margin-right: 5px;
+}
+
+/* Attribution */
+.attribution { 
+    font-size: 11px; text-align: center; 
+    margin-top: -15px;
+}
+.attribution a {    
+    color: hsl(228, 45%, 44%); 
+}
+
+@media only screen and (min-width: 992px) {
+
+    .main {
+        max-width: 1400px;
+    }
+    #bg-top {
+        position: absolute;
+        right: 600px;
+        bottom: 250px;
+        z-index: -1;
+    }
+    
+    #bg-bot {
+        position: absolute;
+        top: 300px;
+        left: 600px;
+        z-index: -1;
+    }
+    
+}
